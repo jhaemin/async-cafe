@@ -11,6 +11,8 @@ const log = console.log
 
 class AsyncCafe {
   constructor() {
+    // Create each Object(Class)'s instance
+
     const eventManager = new EventManager()
     const queue = new Queue({ eventManager })
     const dashboard = new Dashboard({
@@ -25,6 +27,7 @@ class AsyncCafe {
       baristas,
     })
 
+    // Remember references
     this.eventManager = eventManager
     this.queue = queue
     this.dashboard = dashboard

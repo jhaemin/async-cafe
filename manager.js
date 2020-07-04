@@ -10,10 +10,14 @@ class Manager {
     eventManager.onDone((drink) => {
       const order = queue.findOrderById(drink.orderId)
 
+      // If there is no order corresponding to the order ID,
+      // it probably should be an error
       if (!order) {
         throw new Error(`없는 주문입니다.`)
       }
 
+      // If there is at least one drink in order
+      // which is not done yet, return
       for (const drink of order.drinks) {
         if (drink.status !== 'done') {
           return
@@ -23,6 +27,7 @@ class Manager {
       queue.pullOut()
     })
 
+    // Check every 1 second whether there is an order
     setInterval(() => {
       const orders = queue.getAllOrders()
 

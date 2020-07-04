@@ -3,8 +3,12 @@ const Drink = require('./drink')
 const EventEmitter = require('events')
 const Order = require('./order')
 
+/**
+ * A module that handles events using Node.js EventEmitter
+ */
 class EventManager {
   constructor() {
+    // Create an EventEmitter instance
     this.eventEmitter = new EventEmitter()
   }
 
