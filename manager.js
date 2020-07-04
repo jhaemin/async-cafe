@@ -34,7 +34,7 @@ class Manager {
       if (orders.length > 0) {
         orders[0].drinks.forEach((drink) => {
           if (drink.status === 'pending') {
-            eventManager.manufacture(drink)
+            eventManager.emitManufacture(drink)
           }
         })
       }

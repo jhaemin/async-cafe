@@ -22,7 +22,7 @@ class EventManager {
   /**
    * @param {Order} order
    */
-  order(order) {
+  emitOrder(order) {
     this.eventEmitter.emit('order', order)
   }
 
@@ -36,7 +36,7 @@ class EventManager {
   /**
    * @param {Drink} drink
    */
-  manufacture(drink) {
+  emitManufacture(drink) {
     this.eventEmitter.emit('manufacture', drink)
   }
 
@@ -50,7 +50,7 @@ class EventManager {
   /**
    * @param {Drink} drink
    */
-  done(drink) {
+  emitDone(drink) {
     this.eventEmitter.emit('done', drink)
   }
 }

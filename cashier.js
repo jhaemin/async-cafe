@@ -44,7 +44,7 @@ class Cashier {
           return
         }
 
-        this.eventManager.order(new Order(drinkId, amount))
+        this.eventManager.emitOrder(new Order(drinkId, amount))
 
         rl.close()
 

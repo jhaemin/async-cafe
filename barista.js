@@ -35,7 +35,7 @@ class Barista {
     setTimeout(() => {
       drink.updateStatus('done')
       this.drinksInProgress -= 1
-      this.eventManager.done(drink)
+      this.eventManager.emitDone(drink)
     }, menuItem.timeToMake * 1000)
   }
 }
