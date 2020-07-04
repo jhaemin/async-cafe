@@ -37,7 +37,7 @@ class Cashier {
         const amount = parseInt(splitted[1])
 
         if (!amount) {
-          console.log(`최소 한 잔 이상 주문해야합니다.`)
+          console.log(`최소 한 잔 이상 주문해야 합니다.`)
           rl.close()
           this.getOrder()
 
