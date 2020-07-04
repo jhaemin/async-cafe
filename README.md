@@ -3,5 +3,5 @@
 <p align="center">An example to learn JavaScript asynchronism</p>
 
 <p align="center">
-  <img width="700" src="./assets/example.gif" />
+  <img width="500" src="./assets/example.gif" />
 </p>
