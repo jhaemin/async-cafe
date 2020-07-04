@@ -1,9 +1,9 @@
 const readline = require('readline')
 
 const EventManager = require('./event-manager')
+const Order = require('./order')
 
 const { getMenuItemWithId } = require('./menu')
-const Order = require('./order')
 
 class Cashier {
   /**
