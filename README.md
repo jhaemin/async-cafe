@@ -2,4 +2,6 @@
 
 <p align="center">An example to learn JavaScript asynchronism</p>
 
-<img align="center" src="./assets/example.gif" />
+<p align="center">
+  <img width="700" src="./assets/example.gif" />
+</p>
